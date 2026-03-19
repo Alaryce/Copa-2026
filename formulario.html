@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Exemplo de Formulário</title>
+    </head>
+    <body>
+        <form>
+            <!--Definido um fielset-->
+            <fieldset>
+                <!--Legenda-->
+                <legenda>Configuração de sua pizza</legenda>
+
+                <!--Definido um label para o campo de seleção-->
+                <label for="sabor">Escolha o sabor:</label>
+                <!--Definido um campo de seleção-->
+                <select id="sabor" name="sabor">
+                <optgroup label="Sabores Tradicionais">
+                    <option value="1">Escolha</option>
+                    <option value="2">Calabresa</option>
+                    <option value="3">Portuguesa</option>
+                    <option value="4">Frango com Catupiry</option>
+                    <option value="5">Quatro queijos</option>
+                    <option value="6">Carne Seca</option>
+                </optgroup>
+                <optgroup label="Sabores Especiais">
+                    <option value="1">Nordestina</option>
+                    <option value="2">Morango com nutella</option>
+                </optgroup>
+
+            </select>
+            <br />
+            <!--Definindo um label para o campo de entrada-->
+            <label for="quantidade">Quantidade</label>
+            <input
+                type="number"
+                id="quantidade"
+                min="1"
+                max="20"
+                required
+            />
+
+            <br />
+            <label for="borda recheada">Borda Recheada</label>
+            <input
+                type="checkbox"
+                id="borda recheada"
+                name="borda recheada"
+                checked
+            />
+
+            <br />
+            <label for="observacoes">Observações</label>
+            <br />
+            <textarea 
+               id="observacoes" 
+               placeholder="Escreva sua observação aqui!"
+               cols=40
+               rows="10"
+               >
+            </textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+                <label for="nome">Nome Completo:</label>
+                <input id="nome" type="text">
+                <br />
+
+                <label for="email">E-mail:</label>
+                <input id="email" type="email">
+                <br />
+                <label for="telefone">Telefone</label>
+                <input id="telefone" type="tel">
+
+            </fieldset>
+
+            <button type="submit">Enviar Pedido</button>
+            <button type="submit">Limpar</button>
+        </form>
+    </body>
+</html>
