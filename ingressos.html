@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero Assistir!</title>
+</head>
+<body>
+    <header>
+        <h1>Portal Informativo da Copa do Mundo</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <br />
+            <a href="sedes.html">Cidades e Estádios</a>
+            <br />
+            <a href="grupos.html">A Tabela</a>
+            <br />
+            <a href="ingresso.html">Quero Assistir!</a>
+        </nav>
+        <br />
+    </header>
+
+
+    <form>
+        <legend><strong>Dados do Cliente</strong></legend>
+        <br />
+        <label for="nome">Nome Completo:</label>
+        <input
+            id="nome"
+            type="text"
+            />
+
+
+        <br />
+        <label for="email">E-mail:</label>
+        <input
+           id="email"
+           type="text"
+           />
+
+
+        <br />
+        <label for="selecao">Escolha a seleção que você torce:</label>
+        <select id="selecao" name="selecao">
+            <optgroup label="Seleção">
+                <option value="0">Escolha</option>
+                <option value="1">Brasil</option>
+                <option value="2">Marrocos</option>
+                <option value="3">Haiti</option>
+                <option value="4">Escócia</option>
+            </optgroup>
+
+
+        </select>
+
+
+        <br />
+        <label for="quant">Quantidade de ingressos</label>
+        <input
+           type="number"
+           id="quant"
+           min="0"
+           max="10"
+           required
+        />
+        <br />
+        <br />
+         <button type="submit">Efetuar Compra</button>
+         <button type="reset">Limpar</button>
+   
+    </form>
+   
+    <br />
+    <footer>
+        <p>&copy; 2026 FIFA World Cup. Todos os direitos reservados.</p>
+        <p>Contato: info@fifa.org</p>
+        <p>Endereço: Rua Seestrasse, 27 - Zurique, Suíça</p>
+        <p>Telefone: (41) 43 222 7272</p>
+        <p>www.fifa.com</p>
+
+
+
+
+        <a href="https://www.fifa.com/pt" target="_blank">site Oficial</a> |
+        <a href="https://x.com/FIFAcom" target="_blank">Twitter-X</a> |
+        <a href="https://www.instagram.com/fifaworldcup/" target="_blank">Instagram</a>
+    </footer>
+
+
+</body>
+</html>
